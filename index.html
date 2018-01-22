@@ -1,0 +1,20 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Price calculator</title>
+</head>
+<body>
+    <h3>Please check the console for output.</h3>
+    <script src="src/price-calculator.js" type="text/javascript"></script>
+    <script>
+        const priceData = {
+            user: 'company',
+            productType: 'new',
+            price: 100,
+            publishedDate: new Date(),
+        };
+        const priceController = new PriceController(priceModel());
+        console.log(`Refactored calculated price: ${priceController.calculatePrice(priceData)}`);
+    </script>
+</body>
+</html>
